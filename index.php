@@ -10,7 +10,7 @@ if (isset($update["message"]["text"])) {
     $text = "سلام علی سینا! 👋 ربات PHP روی Render کار می‌کنه.";
 
     // توکن خودت رو جایگزین کن
-    $token = "7544747513:AAGUNzsu6pH4ueWa8qte49ohDmLIBKMJSjo";
+    $token = getenv("BOT_TOKEN");
 
     file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=" . urlencode($text));
 }
