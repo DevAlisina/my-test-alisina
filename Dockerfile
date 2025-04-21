@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-EXPOSE 10000
+EXPOSE 8080
 
-CMD ["php", "-S", "0.0.0.0:10000", "index.php"]
+CMD ["php", "-S", "0.0.0.0:8080", "index.php"]
