@@ -7,7 +7,7 @@ var_dump($update);
 
 if (isset($update["message"]["text"])) {
     $chat_id = $update["message"]["chat"]["id"];
-    $text = "سلام علی سینا! 👋 ربات PHP روی Render کار می‌کنه.";
+    $text = "Hello WOrld!";
 
     // توکن خودت رو جایگزین کن
     $token = getenv("BOT_TOKEN");
